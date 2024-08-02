@@ -1,15 +1,15 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
+// import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
+// import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+// import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
+// import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
   title: 'Vio.Ai - Keep Moving Forward',
@@ -24,30 +24,29 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Speak with Us!',
-        href: 'https://github.com/onwidget/astrowind',
+        text: 'Contact Us!',
+        href: 'https://www.linkedin.com/company/104310565/admin/dashboard/',
         target: '_blank',
         icon: 'tabler:download',
       },
       { text: 'Learn more', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/logo-template.png', alt: 'Vio Ai' }}
+    image={{ src: '~/assets/images/logo-template.png', alt: 'Vio Ai',}}
   >
     <Fragment slot="title">
-      Welcome to Vio.AI
+      Welcome to Vio AI
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">Vio Ai</span> is the best option for you and your future
-        by IVO & VALENTINA </span
+        <span class="font-semibold">Vio Ai</span> is the best option for you and your future. </span
       >
     </Fragment>
   </Hero>
 
   <!-- Note Widget ******************* -->
 
-  <Note />
+  <!-- <Note /> -->
 
   <!-- Features Widget *************** -->
 
@@ -55,42 +54,42 @@ const metadata = {
     id="features"
     tagline="Features"
     title="What you get with Vio AI"
-    subtitle="One of the most professional and comprehensive company currently on the market."
+    subtitle="One of the most innovative and dynamic companies in the market today."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Web Design and Development',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
+          ' Creating custom, optimized websites for various devices with a focus on UX/UI.',
         icon: 'tabler:brand-tailwind',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Website Deployment and Maintenance',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
+          'Implementing and maintaining websites to ensure continuous, efficient operation.',
         icon: 'tabler:components',
-      },
-      {
-        title: 'Best Practices',
-        description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
-      },
-      {
-        title: 'Excellent Page Speed',
-        description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
       },
       {
         title: 'Search Engine Optimization (SEO)',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
+          ' Improving organic search rankings through content and site structure optimization.',
+        icon: 'tabler:list-check',
+      },
+      {
+        title: 'Digital Marketing and Online Advertising',
+        description:
+          'Developing and executing digital marketing campaigns to attract and convert leads.',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Branding and Brand Strategy',
+        description:
+          "Creating and developing brand identities and positioning strategies for market recognition.",
         icon: 'tabler:arrows-right-left',
       },
       {
-        title: 'Open to new ideas and contributions',
+        title: 'Performance Analysis and Reporting',
         description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
+          'Tracking and analyzing website and marketing campaign performance, providing data-driven recommendations for optimization.',
         icon: 'tabler:bulb',
       },
     ]}
@@ -100,23 +99,23 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Inside template"
-    title="Vio AI: Fun Meets Functionality!"
+    tagline="See what we know"
+    title="Vio AI: Where fun meets functionality!"
     items={[
       {
         title: 'Built on top of Astro 4.0',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'Our team consists of skilled web designers and developers who create and maintain custom, optimized websites. ',
       },
       {
         title: 'Styled using Tailwind CSS',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'We also have experts in SEO and digital marketing who drive traffic and enhance brand visibility through strategic campaigns.',
       },
       {
         title: 'Cross-browser compatibility',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'Additionally, our analysts provide in-depth performance reports, ensuring continuous improvement and data-driven decision-making.',
       },
     ]}
     image={{
@@ -141,22 +140,22 @@ const metadata = {
     items={[
       {
         title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        description: `We have launched numerous custom, optimized websites, enhancing user engagement. `,
       },
       {
         title: 'Multiple layout possibilities',
         description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+          'Our SEO and digital marketing strategies have increased organic traffic and lead conversions.',
       },
       {
         title: 'Fully responsive design',
         description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
+          "Effective branding has helped clients establish strong market identities.",
       },
       {
         title: 'Integration of media',
         description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+          'Detailed performance analysis has enabled continuous optimization and improved campaign effectiveness.',
       },
     ]}
     image={{
@@ -173,7 +172,7 @@ const metadata = {
 
   <!-- Content Widget **************** -->
 
-  <Content
+  <!-- <Content
     isReversed
     isAfterContent
     items={[
@@ -207,29 +206,38 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content>
+  </Content> -->
 
   <!-- Steps Widget ****************** -->
+
+  <Stats
+  stats={[
+    { title: 'Memers', amount: '13K' },
+    { title: 'Stars', amount: '24.8K' },
+    { title: 'Forks', amount: '10.3K' },
+    { title: 'Users', amount: '48.4K' },
+  ]}
+/>
 
   <Steps
     title="Get your dream website up and running in no time with Vio AI."
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Step 1: <span class="font-medium">First meeting to have all our ideas clear before moving on.</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
+          "",
         icon: 'tabler:package',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
+        title: 'Step 2: <span class="font-medium"> Hands on the table! Time to build your page.</span>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
+          "",
         icon: 'tabler:letter-case',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Step 3: <span class="font-medium">Did somebody talk about branding and marketing strategies?</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
+          '',
         icon: 'tabler:paint',
       },
       {
@@ -245,7 +253,7 @@ const metadata = {
 
   <!-- Features2 Widget ************** -->
 
-  <Features2
+  <!-- <Features2
     title="Most used widgets"
     subtitle="Provides frequently used components for building websites using Tailwind CSS"
     tagline="Components"
@@ -305,17 +313,17 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Features2>
+  </Features2> -->
 
   <!-- HighlightedPosts Widget ******* -->
 
-  <BlogLatestPosts
+  <!-- <BlogLatestPosts
     title="Find out more content in our Blog"
     information={`The blog is used to display AstroWind documentation.
                         Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
                         Astro is a very interesting technology. Thanks.
                 `}
-  />
+  /> -->
 
   <!-- FAQs Widget ******************* -->
 
@@ -360,18 +368,11 @@ const metadata = {
 
   <!-- Stats Widget ****************** -->
 
-  <Stats
-    stats={[
-      { title: 'Memers', amount: '13K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
-    ]}
-  />
+
 
   <!-- CallToAction Widget *********** -->
 
-  <CallToAction
+  <!-- <CallToAction
     actions={[
       {
         variant: 'primary',
@@ -390,5 +391,5 @@ const metadata = {
       Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
       waste more time! :P
     </Fragment>
-  </CallToAction>
+  </CallToAction> -->
 </Layout>

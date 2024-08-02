@@ -1,5 +1,5 @@
 ---
-import Image from '~/components/common/Image.astro';
+// import Image from '~/components/common/Image.astro';
 import Button from '~/components/ui/Button.astro';
 // import Background from '~/components/ui/Background.astro';
 
@@ -12,7 +12,7 @@ const {
 
   content = await Astro.slots.render('content'),
   actions = await Astro.slots.render('actions'),
-  image = await Astro.slots.render('image'),
+  // image = await Astro.slots.render('image'),
 
   id,
   bg = await Astro.slots.render('bg'),
@@ -27,7 +27,7 @@ const {
   </div>
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
     <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
-    <div class="py-12 md:py-20">
+    <div class="py-12 md:py-60">
       <div class="text-center pb-10 md:pb-16 max-w-5xl mx-auto">
         {
           tagline && (
@@ -40,7 +40,7 @@ const {
         {
           title && (
             <h1
-              class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200"
+              class="text-5xl md:text-7xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200"
               set:html={title}
             />
           )
@@ -65,10 +65,10 @@ const {
         </div>
         {content && <Fragment set:html={content} />}
       </div>
-      <div>
+      <!-- <div>
         {
           image && (
-            <div class="relative m-auto max-w-5xl">
+            <div class="relative m-auto max-w-2xl">
               {typeof image === 'string' ? (
                 <Fragment set:html={image} />
               ) : (
@@ -85,7 +85,7 @@ const {
             </div>
           )
         }
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
