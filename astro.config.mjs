@@ -26,6 +26,9 @@ const whenExternalScripts = (items = []) =>
 
 export default defineConfig({
   output: 'static',
+  devToolbar: {
+    enabled: false
+  },
 
   integrations: [
     tailwind({
